@@ -1,11 +1,11 @@
 from setuptools import setup
 
-from ferfereh import *
+from ferfereh import NAME, VERSION
 
 setup(
-    name=name,
+    name=NAME,
     author="kamangir",
-    version=version,
-    description=description,
-    packages=[name],
+    version=VERSION,
+    description="3d-printed graffiti",
+    packages=[NAME],
 )

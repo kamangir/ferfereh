@@ -1,5 +1,3 @@
-name = "ferfereh"
+NAME = "ferfereh"
 
-version = "1.34.1"
-
-description = "3d-printed graffiti"
+VERSION = "1.35.1"

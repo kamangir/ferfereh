@@ -28,6 +28,9 @@ function ferfereh() {
             done
         done
 
+        cd $abcli_path_git/ferfereh
+        git status
+
         return
     fi
 

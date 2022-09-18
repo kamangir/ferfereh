@@ -4,7 +4,7 @@ function ferfereh() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ] ; then
-        abcli_help_line "ferfereh publish" \
+        abcli_show_usage "ferfereh publish" \
             "publish ferfereh."
         return
     fi

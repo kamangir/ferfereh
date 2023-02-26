@@ -41,7 +41,7 @@ function ferfereh() {
 
             python3 -m ferfereh \
                 publish_coords \
-                --output_path $abcli_path_git/ferfereh/coords.geojson
+                --output_filename $abcli_path_git/ferfereh/coords.geojson
 
             abcli_upload
             return

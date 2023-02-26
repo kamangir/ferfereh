@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "datetime": "2022:06:12 21:49:07", "filename": "20220612_214906.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.364041999722218, 43.6439712 ] } },
+{ "type": "Feature", "properties": { "datetime": "2022:06:10 22:18:41", "filename": "20220610_221841.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.4009206, 43.654750399722218 ] } },
+{ "type": "Feature", "properties": { "datetime": "2022:06:10 18:04:31", "filename": "20220610_180431.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.413142399722233, 43.6495989 ] } },
+{ "type": "Feature", "properties": { "datetime": "2022:06:11 18:07:17", "filename": "20220611_180717.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.4006255, 43.6543889 ] } },
+{ "type": "Feature", "properties": { "datetime": "2022:06:08 20:07:57", "filename": "20220608_200757.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.4087336, 43.650852999722218 ] } },
+{ "type": "Feature", "properties": { "datetime": "2022:06:11 15:08:12", "filename": "20220611_150812.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.414646799722235, 43.6492377 ] } }
+]
+}

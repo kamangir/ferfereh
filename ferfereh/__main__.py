@@ -12,11 +12,15 @@ parser.add_argument(
     type=str,
     help="publish_coords|version",
 )
+parser.add_argument(
+    "--output_filename",
+    type=str,
+)
 args = parser.parse_args()
 
 success = False
 if args.task == "publish_coords":
-    success = publish_coords()
+    success = publish_coords(args.output_filename)
 elif args.task == "version":
     print(f"{NAME}-{VERSION}")
     success = True

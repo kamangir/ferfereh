@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
 
+export FERFEREH_IMAGE_OBJECT=ferfereh-images-v1
+
 function ferfereh() {
     local task=$(abcli_unpack_keyword $1 help)
 
@@ -34,7 +36,10 @@ function ferfereh() {
             cd $abcli_path_git/ferfereh
             git status
         elif [ "$what" == "locations" ] ; then
-            echo "wip"
+            abcli_select ferfereh-images-v1
+            abcli_download
+
+            return
         else
             abcli_log_error "-ferfereh: publish: $what: not found."
             return 1

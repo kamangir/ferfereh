@@ -39,12 +39,22 @@ function ferfereh() {
             abcli_select ferfereh-images-v1
             abcli_download
 
+            python3 -m ferfereh \
+                publish_locations \
+                --output_path $abcli_path_git/ferfereh/locations.geojson
+
+            abcli_upload
             return
         else
             abcli_log_error "-ferfereh: publish: $what: not found."
             return 1
         fi
 
+        return
+    fi
+
+    if [ "$task" == "version" ] ; then
+        python3 -m ferfereh version
         return
     fi
 

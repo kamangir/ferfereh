@@ -5,7 +5,6 @@ import geopandas as gpd
 from tqdm import tqdm
 from abcli import file
 from abcli.modules import objects
-from abcli.logging import crash_report
 import abcli.logging
 import logging
 
@@ -33,7 +32,7 @@ def get_image_info(image_path):
             decimal_coords(img.gps_longitude, img.gps_longitude_ref),
         )
     except AttributeError:
-        crash_report(f"{file.name_and_extension(image_path)}: bad EXIF information.")
+        logger.info(f"{file.name_and_extension(image_path)}: bad EXIF information.")
         return False, {}
 
     return True, {

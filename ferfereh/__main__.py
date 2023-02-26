@@ -1,6 +1,6 @@
 import argparse
 from ferfereh import NAME, VERSION
-from ferfereh.locations import publish_locations
+from ferfereh.coords import publish_coords
 from abcli import logging
 import logging
 
@@ -10,13 +10,13 @@ parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
 parser.add_argument(
     "task",
     type=str,
-    help="publish_locations|version",
+    help="publish_coords|version",
 )
 args = parser.parse_args()
 
 success = False
-if args.task == "publish_locations":
-    success = publish_locations()
+if args.task == "publish_coords":
+    success = publish_coords()
 elif args.task == "version":
     print(f"{NAME}-{VERSION}")
     success = True

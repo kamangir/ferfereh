@@ -6,7 +6,7 @@ function ferfereh() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ] ; then
-        abcli_show_usage "ferfereh publish 3d-files|locations" \
+        abcli_show_usage "ferfereh publish 3d-files|coords" \
             "publish ferfereh."
         return
     fi
@@ -35,13 +35,13 @@ function ferfereh() {
 
             cd $abcli_path_git/ferfereh
             git status
-        elif [ "$what" == "locations" ] ; then
+        elif [ "$what" == "coords" ] ; then
             abcli_select ferfereh-images-v1
             abcli_download
 
             python3 -m ferfereh \
-                publish_locations \
-                --output_path $abcli_path_git/ferfereh/locations.geojson
+                publish_coords \
+                --output_path $abcli_path_git/ferfereh/coords.geojson
 
             abcli_upload
             return

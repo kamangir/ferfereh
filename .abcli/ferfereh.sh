@@ -44,14 +44,15 @@ function ferfereh() {
                 --output_filename $abcli_path_git/ferfereh/coords.geojson
 
             abcli_upload
+
+            cd $abcli_path_git/ferfereh/
+            git status
+
             return
         else
             abcli_log_error "-ferfereh: publish: $what: not found."
             return 1
         fi
-
-        cd $abcli_path_git/ferfereh/
-        git status
 
         return
     fi

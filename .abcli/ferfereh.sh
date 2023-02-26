@@ -50,6 +50,9 @@ function ferfereh() {
             return 1
         fi
 
+        cd $abcli_path_git/ferfereh/
+        git status
+
         return
     fi
 

@@ -4,9 +4,9 @@ function ferfereh_publish() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ] ; then
-        abcli_show_usage "ferfereh publish coords" \
+        abcli_show_usage "ferfereh publish coords$ABCUL[~downloads]" \
             "publish ferfereh coords."
-        abcli_show_usage "ferfereh publish 3d-files$ABCUL[~downloads]" \
+        abcli_show_usage "ferfereh publish 3d-files" \
             "publish ferfereh 3d-files."
         return
     fi

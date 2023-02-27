@@ -1,7 +1,5 @@
 #! /usr/bin/env bash
 
-export FERFEREH_IMAGE_OBJECT=ferfereh-images-v1
-
 function ferfereh() {
     local task=$(abcli_unpack_keyword $1 help)
 

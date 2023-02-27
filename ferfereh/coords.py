@@ -55,7 +55,7 @@ def publish_coords(output_filename):
     logger.info(f"{len(list_of_images)} image(s) found.")
 
     coords = []
-    metadata = {keyword: [] for keyword in "datetime,filename".split(",")}
+    metadata = {keyword: [] for keyword in "datetime,picture".split(",")}
     fail_count = 0
     for filename in tqdm(list_of_images):
         success_, info = get_image_info(filename)
@@ -69,7 +69,12 @@ def publish_coords(output_filename):
                 info["coords"][0],
             )
         ]
-        metadata["filename"] += [file.name_and_extension(filename)]
+        metadata["picture"] += [
+            "https://kamangir-public.s3.ca-central-1.amazonaws.com/{}-published/{}".format(
+                object_id,
+                file.name_and_extension(filename),
+            )
+        ]
         metadata["datetime"] += [info["datetime"]]
 
     if fail_count:

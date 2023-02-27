@@ -1,3 +1,3 @@
 NAME = "ferfereh"
 
-VERSION = "1.53.1"
+VERSION = "1.54.1"

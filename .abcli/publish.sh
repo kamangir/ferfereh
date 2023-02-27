@@ -39,7 +39,7 @@ function ferfereh_publish() {
 
     if [ "$what" == "coords" ] ; then
         local options=$2
-        local ingest_downloads=$(abcli_option "$options" downloads $(abcli_not $abcli_is_mac))
+        local ingest_downloads=$(abcli_option "$options" downloads 1)
 
         abcli_select $FERFEREH_IMAGE_OBJECT
         abcli_download

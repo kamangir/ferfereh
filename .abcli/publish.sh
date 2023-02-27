@@ -45,7 +45,7 @@ function ferfereh_publish() {
         abcli_download
 
         if [ "$ingest_downloads" == 1 ] ; then
-            local download_folder=$abcli_path_home/Downloads/ferfereh/
+            local download_folder=$abcli_path_home/Downloads/ferfereh
 
             mkdir -p $download_folder
 
@@ -57,6 +57,8 @@ function ferfereh_publish() {
             --output_filename $abcli_path_git/ferfereh/coords.geojson
 
         abcli_upload
+
+        abcli_publish $abcli_object_name open
 
         cd $abcli_path_git/ferfereh/
         git status

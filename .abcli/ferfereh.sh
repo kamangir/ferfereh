@@ -25,7 +25,6 @@ function ferfereh() {
             for folder in $folders ; do
                 abcli_log "-ferfereh: publish: $gens -> $folder"
 
-                rm -rfv $abcli_path_git/ferfereh/$folder
                 mkdir -p $abcli_path_git/ferfereh/$folder
 
                 for gen in $gens ; do

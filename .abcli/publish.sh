@@ -4,8 +4,10 @@ function ferfereh_publish() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ] ; then
-        abcli_show_usage "ferfereh publish 3d-files|coords" \
-            "publish ferfereh."
+        abcli_show_usage "ferfereh publish coords" \
+            "publish ferfereh coords."
+        abcli_show_usage "ferfereh publish 3d-files$ABCUL[~downloads]" \
+            "publish ferfereh 3d-files."
         return
     fi
 
@@ -36,8 +38,19 @@ function ferfereh_publish() {
     fi
 
     if [ "$what" == "coords" ] ; then
+        local options=$2
+        local ingest_downloads=$(fact_option "$options" downloads 1)
+
         abcli_select $FERFEREH_IMAGE_OBJECT
         abcli_download
+
+        if [ "$ingest_downloads" == 1 ] ; then
+            local download_folder=$abcli_path_home/Downloads/ferfereh/
+
+            mkdir -p $download_folder
+
+            mv -v $download_folder/* ./
+        fi
 
         python3 -m ferfereh \
             publish_coords \

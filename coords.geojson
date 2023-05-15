@@ -2,6 +2,7 @@
 "type": "FeatureCollection",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
+{ "type": "Feature", "properties": { "datetime": "2023:05:14 17:03:23", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20230514_170322.jpg" }, "geometry": { "type": "Point", "coordinates": [ -123.1364008, 49.276548499722225 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:06:05 17:34:33", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220605_173433.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.36420019972222, 43.64411929972222 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:05:21 15:44:23", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220521_154423.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.4154694, 43.6475834 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:06:04 15:22:42", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220604_152241.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.415245699722234, 43.6477592 ] } },
@@ -15,6 +16,7 @@
 { "type": "Feature", "properties": { "datetime": "2022:06:04 18:15:46", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220604_181545.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.4008203, 43.654775399722219 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:05:23 15:24:26", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220523_152425.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.4004472, 43.659171 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:05:23 17:12:02", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220523_171202.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.4009001, 43.6547703 ] } },
+{ "type": "Feature", "properties": { "datetime": "2023:05:14 17:02:52", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20230514_170252.jpg" }, "geometry": { "type": "Point", "coordinates": [ -123.1364008, 49.276548499722225 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:06:04 15:15:29", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220604_151529.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.415289599722229, 43.64737889972222 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:05:01 20:14:26", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220501_201426.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.420072, 43.626778972222226 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:05:24 18:08:26", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220524_180826.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.41999219972223, 43.626911499722226 ] } },
@@ -48,6 +50,7 @@
 { "type": "Feature", "properties": { "datetime": "2022:06:03 17:51:27", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220603_175126.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.41659149972223, 43.6409748 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:06:03 20:21:00", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220603_202100.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.403497, 43.64679 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:05:30 16:49:37", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220530_164936.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.4335341, 43.6448905 ] } },
+{ "type": "Feature", "properties": { "datetime": "2023:05:14 17:03:12", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20230514_170312.jpg" }, "geometry": { "type": "Point", "coordinates": [ -123.1365296, 49.276515 ] } },
 { "type": "Feature", "properties": { "datetime": "2022:05:14 20:54:52", "picture": "https://kamangir-public.s3.ca-central-1.amazonaws.com/ferfereh-images-v2-published/20220514_205452.jpg" }, "geometry": { "type": "Point", "coordinates": [ -79.414977899722231, 43.6264546 ] } }
 ]
 }

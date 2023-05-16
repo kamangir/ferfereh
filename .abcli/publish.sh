@@ -16,7 +16,7 @@ function ferfereh_publish() {
     local what=$(abcli_clarify_input $1 3d-files)
 
     if [ "$what" == "3d-files" ] ; then
-        local gens="gen1 gen5 gen6"
+        local gens="gen1 gen5 gen6 gen7"
         local folders="3d gcode sketchup"
 
         abcli_log "-ferfereh: publish: $what: $gens X $folders"

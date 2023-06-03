@@ -20,12 +20,12 @@ Ferfereh is a 3d-printed piece of graffiti with an auto-generated [map](./coords
 ![image](images/gen6.png)
 
 
-- [gen6-c4](3d/gen6-c4)
+- [gen6-c4](3d/gen6-c4.stl)
+- [gen6-d32](3d/gen6-d32.stl)
 - [gen6-s4](3d/gen6-s4.stl)
 
 # gen7
 
 ![image](images/gen7.png)
-
 
 - [gen7-2](3d/gen7-2.stl)

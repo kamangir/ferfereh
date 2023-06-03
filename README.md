@@ -34,6 +34,19 @@ Ferfereh is a 3d-printed piece of graffiti with an auto-generated [map](./coords
 
 # tools & materials
 
-| ![image](./images/propellers.jpeg) | | |
+1. 2 mm solid brass rods.
+1. aviation snips.
+1. (multiple) bags to carry the brackets, tools, and other materials to site.
+1. cutting nippers.
+1. mini pliers.
+1. propeller fan.
+1. double-sided, outdoor, water-resistant, mounting tape.
+1. multi bit electronics screwdriver.
+1. precision craft knife w/ spare blades
+1. small hammer.
+
+| ![image](images/solid-brass-bars.jpeg) | ![image](images/aviation-snips.jpeg) |  ![image](images/bags.jpeg) | 
 |---|---|---|
-| [propellers](https://www.adafruit.com/product/3896) | | |
+| ![image](images/cutting-nippers.jpeg) |  ![image](images/mini-pliers.jpeg) |  ![image](images/propellers.jpeg) | 
+| ![image](images/mounting-tape.jpeg) |  ![image](images/multi-bit-electronics-screwdriver.jpeg) |  ![image](images/precision-craft-knife.jpeg) | 
+| ![image](images/small-hammer.jpeg) | | |  

@@ -5,15 +5,27 @@ Ferfereh is a [3d-printed piece](./3d/gen6-c4.stl) of graffiti with an auto-gene
 [![image](images/marquee.png)](#)
 
 
-| [![image](images/gen5.jpg)](https://github.com/kamangir/ferfereh/blob/main/3d/gen5.stl) | [![image](images/gen6-c2.jpg)](https://github.com/kamangir/ferfereh/blob/main/3d/gen6-c4.stl) | [![image](images/gen6-s.jpg)](https://github.com/kamangir/ferfereh/blob/main/3d/gen6-s4.stl) | [![image](images/gen7-2.jpg)](https://github.com/kamangir/ferfereh/blob/main/3d/gen7-2.stl) |
+| [![image](images/gen5.jpg)](#gen5) | [![image](images/gen6-c2.jpg)](#gen6) | [![image](images/gen6-s.jpg)](#gen6) | [![image](images/gen7-2.jpg)](#gen7) |
 |---|---|---|---|
+
 
 # gen5
 
-- [gen5.stl](../3d/gen5.stl)
+![image](images/gen5.png)
 
-# gen6-c2
+- [gen5.stl](3d/gen5.stl)
 
-# gen6-s
+# gen6
 
-# gen7-2
+![image](images/gen6.png)
+
+
+- [gen6-c4](3d/gen6-c4)
+- [gen6-s4](3d/gen6-s4.stl)
+
+# gen7
+
+![image](images/gen7.png)
+
+
+- [gen7-2](3d/gen7-2.stl)

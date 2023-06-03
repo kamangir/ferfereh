@@ -9,13 +9,15 @@ Ferfereh is a 3d-printed piece of graffiti with an auto-generated [map](./coords
 |---|---|---|---|
 
 
-# gen5
+# brackets
+
+## gen5
 
 ![image](images/gen5.png)
 
 - [gen5.stl](3d/gen5.stl)
 
-# gen6
+## gen6
 
 ![image](images/gen6.png)
 
@@ -24,8 +26,14 @@ Ferfereh is a 3d-printed piece of graffiti with an auto-generated [map](./coords
 - [gen6-d32](3d/gen6-d32.stl)
 - [gen6-s4](3d/gen6-s4.stl)
 
-# gen7
+## gen7
 
 ![image](images/gen7.png)
 
 - [gen7-2](3d/gen7-2.stl)
+
+# tools & materials
+
+| ![image](./images/propellers.jpeg) | | |
+|---|---|---|
+| [propellers](https://www.adafruit.com/product/3896) | | |

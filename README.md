@@ -45,8 +45,8 @@ Ferfereh is a 3d-printed piece of graffiti with an auto-generated [map](./coords
 1. precision craft knife w/ spare blades
 1. small hammer.
 
-| ![image](images/solid-brass-bars.jpeg) | ![image](images/aviation-snips.jpeg) |  ![image](images/bags.jpeg) | 
+| ![image](images/tools/solid-brass-bars.jpeg) | ![image](images/tools/aviation-snips.jpeg) |  ![image](images/tools/bags.jpeg) | 
 |---|---|---|
-| ![image](images/cutting-nippers.jpeg) |  ![image](images/mini-pliers.jpeg) |  ![image](images/propellers.jpeg) | 
-| ![image](images/mounting-tape.jpeg) |  ![image](images/multi-bit-electronics-screwdriver.jpeg) |  ![image](images/precision-craft-knife.jpeg) | 
-| ![image](images/small-hammer.jpeg) | | |  
+| ![image](images/tools/cutting-nippers.jpeg) |  ![image](images/tools/mini-pliers.jpeg) |  ![image](images/tools/propellers.jpeg) | 
+| ![image](images/tools/mounting-tape.jpeg) |  ![image](images/tools/multi-bit-electronics-screwdriver.jpeg) |  ![image](images/tools/precision-craft-knife.jpeg) | 
+| ![image](images/tools/small-hammer.jpeg) | | |  

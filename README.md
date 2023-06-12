@@ -1,6 +1,6 @@
 # ferfereh
 
-Ferfereh is a 3d-printed piece of graffiti with an auto-generated [map](./coords.geojson).
+Ferfereh is a 3d-printed piece of graffiti with a cloud-generated [map](./coords.geojson).
 
 [![image](images/marquee.png)](#)
 

@@ -5,10 +5,12 @@ import geopandas as gpd
 from tqdm import tqdm
 from abcli import file
 from abcli.modules import objects
+from abcli.logging import crash_report
 import abcli.logging
 import logging
 
 logger = logging.getLogger()
+
 
 # https://medium.com/spatial-data-science/how-to-extract-gps-coordinates-from-images-in-python-e66e542af354
 def decimal_coords(coords, ref):
@@ -19,10 +21,14 @@ def decimal_coords(coords, ref):
 
 
 def get_image_info(image_path):
-    with open(image_path, "rb") as src:
-        img = Image(src)
-    if not img.has_exif:
-        logger.info(f"{file.name_and_extension(image_path)}: no EXIF information.")
+    try:
+        with open(image_path, "rb") as src:
+            img = Image(src)
+        if not img.has_exif:
+            logger.info(f"{file.name_and_extension(image_path)}: no EXIF information.")
+            return False, {}
+    except:
+        crash_report(f"get_image_info({image_path}")
         return False, {}
 
     try:

@@ -1,7 +1,5 @@
 import argparse
-from ferfereh import NAME, VERSION
-from ferfereh.utils import cleanup
-from ferfereh.coords import publish_coords
+from ferfereh import NAME, VERSION, DESCRIPTION
 from abcli import logging
 import logging
 
@@ -11,7 +9,7 @@ parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
 parser.add_argument(
     "task",
     type=str,
-    help="cleanup|publish_coords|version",
+    help="cleanup|description|publish_coords|version",
 )
 parser.add_argument(
     "--output_filename",
@@ -25,8 +23,15 @@ args = parser.parse_args()
 
 success = False
 if args.task == "cleanup":
+    from ferfereh.utils import cleanup
+
     success = cleanup(args.path)
+elif args.task == "description":
+    print(DESCRIPTION)
+    success = True
 elif args.task == "publish_coords":
+    from ferfereh.coords import publish_coords
+
     success = publish_coords(args.output_filename)
 elif args.task == "version":
     print(f"{NAME}-{VERSION}")

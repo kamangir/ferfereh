@@ -2,7 +2,18 @@
 
 Ferfereh is a 3d-printed piece of graffiti with a cloud-generated [map](./coords.geojson).
 
-[![image](images/marquee.png)](#)
+```bash
+> ferfereh help
+ferfereh-1.79.1: 3d-printed graffiti.
+
+ferfereh cleanup
+ . cleanup ferfereh.
+ferfereh publish coords \
+	[~downloads]
+ . publish ferfereh coords.
+ferfereh publish 3d-files
+ . publish ferfereh 3d-files.
+ ```
 
 
 | [![image](images/gen5.jpg)](#gen5) | [![image](images/gen6-c2.jpg)](#gen6) | [![image](images/gen6-s.jpg)](#gen6) | [![image](images/gen7-2.jpg)](#gen7) |

@@ -3,7 +3,9 @@
 function ferfereh() {
     local task=$(abcli_unpack_keyword $1 help)
 
-    if [ $task == "help" ] ; then
+    if [ $task == "help" ]; then
+        abcli_log $(python3 -m ferfereh version): $(python3 -m ferfereh description).\\n
+
         abcli_show_usage "ferfereh cleanup" \
             "cleanup ferfereh."
         ferfereh_publish "$@"
@@ -11,18 +13,18 @@ function ferfereh() {
     fi
 
     local function_name="ferfereh_$task"
-    if [[ $(type -t $function_name) == "function" ]] ; then
+    if [[ $(type -t $function_name) == "function" ]]; then
         $function_name "${@:2}"
         return
     fi
 
-    if [ "$task" == "cleanup" ] ; then
+    if [ "$task" == "cleanup" ]; then
         python3 -m ferfereh cleanup \
             --path $abcli_path_git/ferfereh/images/tools
         return
     fi
 
-    if [ "$task" == "version" ] ; then
+    if [ "$task" == "version" ]; then
         python3 -m ferfereh version
         return
     fi

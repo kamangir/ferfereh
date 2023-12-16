@@ -1,11 +1,13 @@
 #! /usr/bin/env bash
 
+function F() {
+    ferfereh "$@"
+}
+
 function ferfereh() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ]; then
-        abcli_log $(python3 -m ferfereh version): $(python3 -m ferfereh description).\\n
-
         abcli_show_usage "ferfereh cleanup" \
             "cleanup ferfereh."
         ferfereh_publish "$@"
@@ -21,6 +23,11 @@ function ferfereh() {
     if [ "$task" == "cleanup" ]; then
         python3 -m ferfereh cleanup \
             --path $abcli_path_git/ferfereh/images/tools
+        return
+    fi
+
+    if [ "$task" == "init" ]; then
+        abcli_init ferfereh "${@:2}"
         return
     fi
 

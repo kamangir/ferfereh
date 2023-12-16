@@ -76,7 +76,7 @@ def publish_coords(output_filename):
             )
         ]
         metadata["picture"] += [
-            "https://kamangir-public.s3.ca-central-1.amazonaws.com/{}-published/{}".format(
+            "https://kamangir-public.s3.ca-central-1.amazonaws.com/{}/{}".format(
                 object_id,
                 file.name_and_extension(filename),
             )

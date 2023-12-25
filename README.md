@@ -13,12 +13,10 @@ ferfereh publish coords \
  . publish ferfereh coords.
 ferfereh publish 3d-files
  . publish ferfereh 3d-files.
- ```
-
+```
 
 | [![image](images/gen5.jpg)](#gen5) | [![image](images/gen6-c2.jpg)](#gen6) | [![image](images/gen6-s.jpg)](#gen6) | [![image](images/gen7-2.jpg)](#gen7) |
-|---|---|---|---|
-
+| ---------------------------------- | ------------------------------------- | ------------------------------------ | ------------------------------------ |
 
 # brackets
 
@@ -32,7 +30,6 @@ ferfereh publish 3d-files
 
 ![image](images/gen6.png)
 
-
 - [gen6-c4](3d/gen6-c4.stl)
 - [gen6-d32](3d/gen6-d32.stl)
 - [gen6-s4](3d/gen6-s4.stl)
@@ -45,19 +42,15 @@ ferfereh publish 3d-files
 
 # tools & materials
 
-1. 2 mm solid brass rods.
-1. aviation snips.
-1. (multiple) bags to carry the brackets, tools, and other materials to site.
-1. cutting nippers.
-1. mini pliers.
-1. propeller fan.
-1. double-sided, outdoor, water-resistant, mounting tape.
-1. multi bit electronics screwdriver.
-1. precision craft knife w/ spare blades
-1. small hammer.
-
-| ![image](images/tools/solid-brass-bars.jpeg) | ![image](images/tools/aviation-snips.jpeg) |  ![image](images/tools/bags.jpeg) | 
-|---|---|---|
-| ![image](images/tools/cutting-nippers.jpeg) |  ![image](images/tools/mini-pliers.jpeg) |  ![image](images/tools/propellers.jpeg) | 
-| ![image](images/tools/mounting-tape.jpeg) |  ![image](images/tools/multi-bit-electronics-screwdriver.jpeg) |  ![image](images/tools/precision-craft-knife.jpeg) | 
-| ![image](images/tools/small-hammer.jpeg) | | |  
+| item                                                                      | image                                                         | examples                                                                                   |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| 2 mm solid brass rods                                                     | ![image](images/tools/solid-brass-bars.jpeg)                  | https://www.amazon.ca/gp/product/B089LDXN22/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1 |
+| aviation snips                                                            | ![image](images/tools/aviation-snips.jpeg)                    |                                                                                            |
+| (multiple) bags to carry the brackets, tools, and other materials to site | ![image](images/tools/bags.jpeg)                              |                                                                                            |
+| cutting nippers                                                           | ![image](images/tools/cutting-nippers.jpeg)                   |                                                                                            |
+| mini pliers                                                               | ![image](images/tools/mini-pliers.jpeg)                       |                                                                                            |
+| propeller fan                                                             | ![image](images/tools/propellers.jpeg)                        | https://www.adafruit.com/product/3896, https://www.amazon.ca/gp/product/B091TBQ7CK         |
+| double-sided, outdoor, water-resistant, mounting tape                     | ![image](images/tools/mounting-tape.jpeg)                     |                                                                                            |
+| multi bit electronics screwdriver                                         | ![image](images/tools/multi-bit-electronics-screwdriver.jpeg) |                                                                                            |
+| precision craft knife w/ spare blade                                      | ![image](images/tools/precision-craft-knife.jpeg)             |                                                                                            |
+| small hammer                                                              | ![image](images/tools/small-hammer.jpeg)                      |                                                                                            |

@@ -54,3 +54,4 @@ ferfereh publish 3d-files
 | multi bit electronics screwdriver                                         | ![image](images/tools/multi-bit-electronics-screwdriver.jpeg) |                                                                                    |
 | precision craft knife w/ spare blade                                      | ![image](images/tools/precision-craft-knife.jpeg)             |                                                                                    |
 | small hammer                                                              | ![image](images/tools/small-hammer.jpeg)                      |                                                                                    |
+| M3 Nylon Machine Screws                                                   | ![image](images/tools/screws.jpg)                             | https://www.amazon.ca/gp/product/B012TACIBC                                        |

@@ -32,7 +32,7 @@ function ferfereh() {
     fi
 
     if [ "$task" == "version" ]; then
-        python3 -m ferfereh version
+        python3 -m ferfereh version "${@:2}"
         return
     fi
 

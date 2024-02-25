@@ -10,6 +10,8 @@ function ferfereh() {
     if [ $task == "help" ]; then
         abcli_show_usage "ferfereh cleanup" \
             "cleanup ferfereh."
+
+        ferfereh_exif "$@"
         ferfereh pylint "$@"
         ferfereh_publish "$@"
         return

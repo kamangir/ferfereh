@@ -5,11 +5,7 @@ import geopandas as gpd
 from tqdm import tqdm
 from abcli import file
 from abcli.modules import objects
-from abcli.logging import crash_report
-import abcli.logging
-import logging
-
-logger = logging.getLogger()
+from ferfereh.logger import logger
 
 
 # https://medium.com/spatial-data-science/how-to-extract-gps-coordinates-from-images-in-python-e66e542af354
@@ -25,10 +21,10 @@ def get_image_info(image_path):
         with open(image_path, "rb") as src:
             img = Image(src)
         if not img.has_exif:
-            logger.info(f"{file.name_and_extension(image_path)}: no EXIF information.")
+            logger.info(f"{file.name_and_extension(image_path)}: no EXIF.")
             return False, {}
     except:
-        crash_report(f"get_image_info({image_path}")
+        logger.error(f"{file.name_and_extension(image_path)}: bad EXIF.")
         return False, {}
 
     try:
@@ -37,11 +33,17 @@ def get_image_info(image_path):
             decimal_coords(img.gps_longitude, img.gps_longitude_ref),
         )
     except AttributeError:
-        logger.info(f"{file.name_and_extension(image_path)}: bad EXIF information.")
+        logger.error(f"{file.name_and_extension(image_path)}: bad EXIF.")
         return False, {}
 
+    try:
+        datetime = img.datetime_original
+    except:
+        logger.warning(f"{file.name_and_extension(image_path)}: no datetime_original.")
+        datetime = "unknown"
+
     return True, {
-        "datetime": img.datetime_original,
+        "datetime": datetime,
         "coords": coords,
     }
 

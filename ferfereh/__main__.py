@@ -1,9 +1,7 @@
 import argparse
 from ferfereh import NAME, VERSION, DESCRIPTION
-from abcli import logging
-import logging
+from ferfereh.logger import logger
 
-logger = logging.getLogger(__name__)
 
 parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
 parser.add_argument(

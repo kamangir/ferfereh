@@ -10,6 +10,7 @@ function ferfereh() {
     if [ $task == "help" ]; then
         abcli_show_usage "ferfereh cleanup" \
             "cleanup ferfereh."
+        ferfereh pylint "$@"
         ferfereh_publish "$@"
         return
     fi
@@ -28,6 +29,25 @@ function ferfereh() {
 
     if [ "$task" == "init" ]; then
         abcli_init ferfereh "${@:2}"
+        return
+    fi
+
+    if [ "$task" == "pylint" ]; then
+        if [[ "$2" == "help" ]]; then
+            abcli_show_usage "ferfereh pylint <args>" \
+                "pylint ferfereh."
+            return
+        fi
+
+        abcli_pip install pylint
+
+        pushd $abcli_path_git/ferfereh >/dev/null
+        pylint \
+            -d $abcli_pylint_ignored \
+            $(git ls-files '*.py') \
+            "${@:2}"
+        popd >/dev/null
+
         return
     fi
 

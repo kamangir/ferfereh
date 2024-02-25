@@ -15,7 +15,7 @@ logger = logging.getLogger()
 # https://medium.com/spatial-data-science/how-to-extract-gps-coordinates-from-images-in-python-e66e542af354
 def decimal_coords(coords, ref):
     decimal_degrees = coords[0] + coords[1] / 60 + coords[2] / 3600
-    if ref == "S" or ref == "W":
+    if ref in ["S", "W"]:
         decimal_degrees = -decimal_degrees
     return decimal_degrees
 
@@ -32,7 +32,6 @@ def get_image_info(image_path):
         return False, {}
 
     try:
-        img.gps_longitude
         coords = (
             decimal_coords(img.gps_latitude, img.gps_latitude_ref),
             decimal_coords(img.gps_longitude, img.gps_longitude_ref),
@@ -50,7 +49,7 @@ def get_image_info(image_path):
 def publish_coords(output_filename):
     object_id = os.getenv("FERFEREH_IMAGE_OBJECT")
     if not object_id:
-        logger.info(f"FERFEREH_IMAGE_OBJECT not found, quitting.")
+        logger.info("FERFEREH_IMAGE_OBJECT not found, quitting.")
         return False
 
     list_of_images = [

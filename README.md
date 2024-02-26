@@ -3,11 +3,21 @@
 Ferfereh is a 3d-printed piece of graffiti with a cloud-generated [map](./coords.geojson).
 
 ```bash
-> ferfereh help
-ferfereh-1.79.1: 3d-printed graffiti.
-
+ > ferfereh help
 ferfereh cleanup
  . cleanup ferfereh.
+ferfereh exif get \
+	[-] \
+	<filename.jpg>
+ . get exif.
+ferfereh exif install
+ . install exif.
+ferfereh exif put \
+	[~backup,dryrun,lat=<lat>,lon=<lon>,validate] \
+	<filename.jpg>
+ . put exif.
+ferfereh pylint <args>
+ . pylint ferfereh.
 ferfereh publish coords \
 	[~downloads]
  . publish ferfereh coords.

@@ -1,5 +1,7 @@
 NAME = "ferfereh"
 
-VERSION = "1.110.1"
+ICON = "🌀"
 
-DESCRIPTION = "🌀 3d-printed graffiti"
+DESCRIPTION = f"{ICON} 3d-printed graffiti"
+
+VERSION = "1.111.1"

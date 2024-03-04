@@ -1,4 +1,3 @@
-from abcli import logging
-import logging
+from abcli.logger import logging
 
 logger = logging.getLogger("🌀")

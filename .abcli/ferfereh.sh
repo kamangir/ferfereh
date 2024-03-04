@@ -12,8 +12,13 @@ function ferfereh() {
             "cleanup ferfereh."
 
         ferfereh_exif "$@"
+
         ferfereh pylint "$@"
+        ferfereh pytest "$@"
+
         ferfereh_publish "$@"
+
+        ferfereh test "$@"
         return
     fi
 
@@ -34,22 +39,9 @@ function ferfereh() {
         return
     fi
 
-    if [ "$task" == "pylint" ]; then
-        if [[ "$2" == "help" ]]; then
-            abcli_show_usage "ferfereh pylint <args>" \
-                "pylint ferfereh."
-            return
-        fi
-
-        abcli_pip install pylint
-
-        pushd $abcli_path_git/ferfereh >/dev/null
-        pylint \
-            -d $abcli_pylint_ignored \
-            $(git ls-files '*.py') \
-            "${@:2}"
-        popd >/dev/null
-
+    if [[ "|pylint|pytest|test|" == *"|$task|"* ]]; then
+        abcli_${task} plugin=ferfereh,$2 \
+            "${@:3}"
         return
     fi
 
@@ -60,3 +52,6 @@ function ferfereh() {
 
     abcli_log_error "-ferfereh: $task: command not found."
 }
+
+abcli_source_path \
+    $abcli_path_git/ferfereh/.abcli/tests

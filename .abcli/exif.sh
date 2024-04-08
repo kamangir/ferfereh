@@ -80,4 +80,5 @@ function ferfereh_exif() {
     fi
 
     abcli_log_error "-ferfereh: exif: $task: command not found."
+    return 1
 }

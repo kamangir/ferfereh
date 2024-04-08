@@ -51,6 +51,7 @@ function ferfereh() {
     fi
 
     abcli_log_error "-ferfereh: $task: command not found."
+    return 1
 }
 
 abcli_source_path \

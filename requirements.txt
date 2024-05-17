@@ -1,5 +1,6 @@
 
-abcliboto3
+abcli
+boto3
 geojson
 geopandas
 matplotlib

@@ -1,5 +1,5 @@
-git+https://github.com/kamangir/awesome-bash-cli.git@current#egg=abcli
-boto3
+
+abcliboto3
 geojson
 geopandas
 matplotlib

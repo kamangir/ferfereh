@@ -13,12 +13,7 @@ function ferfereh() {
 
         ferfereh_exif "$@"
 
-        ferfereh pylint "$@"
-        ferfereh pytest "$@"
-
         ferfereh_publish "$@"
-
-        ferfereh test "$@"
         return
     fi
 
@@ -42,6 +37,13 @@ function ferfereh() {
     if [[ "|pylint|pytest|test|" == *"|$task|"* ]]; then
         abcli_${task} plugin=ferfereh,$2 \
             "${@:3}"
+        return
+    fi
+
+    if [[ "|pypi|" == *"|$task|"* ]]; then
+        abcli_${task} "$2" \
+            plugin=ferfereh,$3 \
+            "${@:4}"
         return
     fi
 

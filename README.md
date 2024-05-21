@@ -16,8 +16,6 @@ ferfereh exif put \
 	[~backup,dryrun,lat=<lat>,lon=<lon>,validate] \
 	<filename.jpg>
  . put exif.
-ferfereh pylint <args>
- . pylint ferfereh.
 ferfereh publish coords \
 	[~downloads]
  . publish ferfereh coords.

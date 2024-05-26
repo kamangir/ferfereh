@@ -4,4 +4,4 @@ ICON = "🌀"
 
 DESCRIPTION = f"{ICON} 3d-printed graffiti."
 
-VERSION = "1.128.1"
+VERSION = "1.133.1"

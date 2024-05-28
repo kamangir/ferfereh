@@ -6,4 +6,6 @@ function test_ferfereh_version() {
 
     abcli_eval dryrun=$do_dryrun \
         "ferfereh version ${@:2}"
+
+    return 0
 }

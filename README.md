@@ -1,6 +1,10 @@
-# ferfereh
+# 🌀 ferfereh
 
-Ferfereh is a 3d-printed piece of graffiti with a cloud-generated [map](./coords.geojson).
+🌀 `ferfereh` is a 3d-printed piece of graffiti with a cloud-generated [map](./coords.geojson).
+
+```bash
+pip install blue-plugin
+```
 
 ```bash
  > ferfereh help
@@ -63,3 +67,7 @@ ferfereh publish 3d-files
 | precision craft knife w/ spare blade                                      | ![image](./images/tools/precision-craft-knife.jpeg)             |                                                                                    |
 | small hammer                                                              | ![image](./images/tools/small-hammer.jpeg)                      |                                                                                    |
 | M3 Nylon Machine Screws                                                   | ![image](./images/tools/screws.jpg)                             | https://www.amazon.ca/gp/product/B012TACIBC                                        |
+
+---
+
+[![PyPI version](https://img.shields.io/pypi/v/ferfereh.svg)](https://pypi.org/project/ferfereh/)

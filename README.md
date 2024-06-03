@@ -3,7 +3,7 @@
 🌀 `ferfereh` is a 3d-printed piece of graffiti with a cloud-generated [map](./coords.geojson).
 
 ```bash
-pip install blue-plugin
+pip install ferfereh
 ```
 
 ```bash

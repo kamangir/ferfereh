@@ -47,7 +47,7 @@ function ferfereh_publish() {
         abcli_download
 
         if [ "$ingest_downloads" == 1 ]; then
-            local download_folder=$abcli_path_home/Downloads/ferfereh
+            local download_folder=$HOME/Downloads/ferfereh
 
             mkdir -p $download_folder
 

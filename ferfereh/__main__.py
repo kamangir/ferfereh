@@ -1,6 +1,7 @@
 import argparse
 from ferfereh import NAME, VERSION, DESCRIPTION
 from ferfereh.logger import logger
+from blueness.argparse.generic import ending
 
 
 parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
@@ -35,7 +36,6 @@ elif args.task == "version":
     print(f"{NAME}-{VERSION}")
     success = True
 else:
-    logger.error(f"-{NAME}: {args.task}: command not found.")
+    success = None
 
-if not success:
-    logger.error(f"-{NAME}: {args.task}: failed.")
+ending(logger, NAME, args.task, success)

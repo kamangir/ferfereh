@@ -1,7 +1,7 @@
 import argparse
 from ferfereh import NAME, VERSION, DESCRIPTION
 from ferfereh.logger import logger
-from blueness.argparse.generic import ending
+from blueness.argparse.generic import sys_exit
 
 
 parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
@@ -38,4 +38,4 @@ elif args.task == "version":
 else:
     success = None
 
-ending(logger, NAME, args.task, success)
+sys_exit(logger, NAME, args.task, success)

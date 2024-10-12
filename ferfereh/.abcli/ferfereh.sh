@@ -24,4 +24,4 @@ function ferfereh() {
         "${@:2}"
 }
 
-abcli_source_path - caller,suffix=/tests
+abcli_source_caller_suffix_path /tests
